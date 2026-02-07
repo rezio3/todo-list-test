@@ -1,0 +1,53 @@
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE i edytory
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Zależności
+node_modules/
+vendor/
+bower_components/
+
+# Pliki logów i debugowania
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Pliki tymczasowe
+*.tmp
+*.temp
+.cache/
+tmp/
+
+# Pliki kompilacji
+*.class
+*.pyc
+*.pyo
+__pycache__/
+*.o
+*.so
+*.dll
+*.exe
+
+# Pliki środowiskowe
+.env
+.env.local
+.env.*.local
+
+# Katalogi buildów
+dist/
+build/
+out/
+target/
+
+# Pliki testowe
+coverage/
+.nyc_output/
