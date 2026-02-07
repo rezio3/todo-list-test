@@ -12,12 +12,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   align-items: flex-start;
-=======
-  align-items: flex-end;
-  position: relative;
->>>>>>> 6eaf26183fa7c178007436a9b58dac3c44f4a7f1
   background-color: rgb(31, 31, 31);
 }
 body h1 {
