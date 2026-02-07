@@ -35,6 +35,7 @@ const addTask = async (task) => {
 };
 
 const removeTask = async (id) => {
+  console.log("Usunięto taska");
   try {
     handleLoadingLayout(true);
     const res = await fetch(`${baseUrl}api/tasks/${id}`, { method: "DELETE" });
