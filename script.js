@@ -47,6 +47,7 @@ const removeTask = async (id) => {
     console.error(error);
   }
 };
+
 const markDone = async (id) => {
   try {
     handleLoadingLayout(true);
