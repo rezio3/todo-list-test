@@ -1,0 +1,118 @@
+$white: rgb(255, 251, 234);
+$dark: rgb(31, 31, 31);
+$gray: rgb(51, 51, 51);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: $white;
+}
+body {
+  padding-top: 100px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $dark;
+  h1 {
+    font-family: "Playwrite NZ Basic", cursive;
+    font-weight: 400;
+  }
+  button {
+    background-color: $dark;
+    padding: 10px 15px;
+    border: 1px solid rgb(93, 93, 93);
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  button:hover {
+    box-shadow: 0px 0px 20px -10px $white;
+  }
+  .to-do-list-container {
+    margin-top: 30px;
+    margin-bottom: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 600px;
+    width: 500px;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -10px $white;
+
+    .task-container {
+      padding: 15px 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border-radius: 15px;
+      background-color: $gray;
+      transition: 0.3s;
+
+      .buttons-container {
+        display: flex;
+        gap: 10px;
+      }
+    }
+    .completed {
+      background-color: rgb(27, 73, 27);
+    }
+  }
+}
+
+input {
+  color: white;
+  padding: 10px 10px;
+  border: 1px solid $white;
+  background-color: transparent;
+}
+textarea {
+  min-width: 300px;
+  min-height: 100px;
+  padding: 10px 10px;
+  border: 1px solid $white;
+  background-color: transparent;
+}
+
+label {
+  margin: 10px 0;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hide {
+  display: none;
+}
